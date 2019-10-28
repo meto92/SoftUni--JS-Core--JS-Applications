@@ -1,0 +1,26 @@
+{{> header}}
+
+<div class="user-profile">
+
+    <img id="user-avatar-url" src="{{avatarUrl}}">
+    <h1>{{profileUsername}}</h1>
+    <h2>{{email}}</h2>
+
+    {{#if isLoggedInUserProfile}}
+        <a id="deleteUserButton" href="#/user/delete/{{_id}}">DELETE USER!</a>
+    {{/if}}
+
+    <p id="user-listings-title">User Memes
+    </p>
+    <div class="user-meme-listings">
+            
+        {{#each userMemes}}
+            {{> meme}}
+        {{else}}
+            <p class="no-memes">No memes in database.</p>
+        {{/each}}
+
+    </div>
+</div>
+
+{{> footer}}

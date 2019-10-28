@@ -1,0 +1,18 @@
+<div class="ticket-area-left">
+    <img src="{{img}}" alt="">
+</div>
+<div class="ticket-area-right">
+    <h3>{{destination}}</h3>
+    <div>from {{origin}}</div>
+    <div class="data-and-time">
+        {{day}} {{month}} {{departureTime}}
+
+        {{#if isCurrentUserCreator}}
+            <a href="#/flights/edit/{{_id}}" class="edit-flight-detail"></a>
+        {{/if}}
+
+    </div>
+    <div>
+        {{seats}} Seats ({{price}} per seat)
+    </div>
+</div>

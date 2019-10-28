@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Tube</title>
+
+    <link rel="stylesheet" href="style/site.css">
+    <link rel="stylesheet" href="style/welcome.css">
+    <link rel="stylesheet" href="style/car-listings.css">
+    <link rel="stylesheet" href="style/login-register.css">
+    <link rel="stylesheet" href="style/my-listings.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/notifications.css">
+    <link rel="stylesheet" href="style/listing-details.css">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <div id="notifications">
+        <div id="loadingBox" class="notification">
+            <span>Loading...</span>
+        </div>
+        <div id="infoBox" class="notification">
+            <span></span>
+        </div>
+        <div id="errorBox" class="notification">
+            <span></span>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+    <script src="node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    
+	<!-- Helpers -->
+	<script src="scripts/helpers/utilities.js"></script>
+    <script src="scripts/helpers/notifications.js"></script>
+    <script src="scripts/helpers/requester.js"></script>
+    <!-- Services -->
+	<script src="scripts/services/userService.js"></script>
+    <script src="scripts/services/listingService.js"></script>
+    <!-- Controllers -->
+	<script src="scripts/controllers/homeController.js"></script>
+    <script src="scripts/controllers/userController.js"></script>
+    <script src="scripts/controllers/listingController.js"></script>
+	
+    <script src="app.js"></script>
+</body>
+
+</html>
